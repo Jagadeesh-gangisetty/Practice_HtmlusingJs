@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .container
+        {
+            display: flex;
+        }
+        .btn 
+        {
+            background-color: blue;
+        }
+        .one 
+        {
+            width:600px;
+            height:550px;
+            border: solid;
+        }
+        .o 
+        {
+            border-radius: 30px;
+            font-size: 30px;
+        }
+    </style>
+    <script>
+        function init()
+        {   
+            let a=document.getElementById("J").value;
+            document.getElementById("p").innerHTML=`${a}`;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+            <textarea id="J" rows="35" cols="75"></textarea>
+            <button class="btn" onclick="init()"><div class="o">submit</div></button>
+            <div class="one">
+        <div id="p"></div>
+    </div>
+    </div>
+</body>
+</html>
